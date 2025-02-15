@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Slabo+27px&display=swap');
+
+body {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  background-color: rgb(195, 200, 171);
+}
+h1{
+  text-decoration: underline;
+}
+select{
+  height: 20px;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.game {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  background: #f7f1f1;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  transition: all 0.5s ease-in-out;
+}
+.game:hover{
+  border: 1px solid #766e6e;
+  background: #766e6e;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(206, 6, 6);
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+a:hover{
+  background-color: rgb(21, 194, 21);
+  transition: all 0.5s ease-in-out;
+}
