@@ -40,15 +40,12 @@ function displayGames(games) {
     gameElement.classList.add("game");
     gameElement.innerHTML = `
           <h3>${game.title || "Unknown Title"}</h3>
-          ${
-            game.thumbnail
-              ? `<img src="${game.thumbnail}" alt="${game.title}">`
-              : ""
-          }
+          ${game.thumbnail ? `<img src="${game.thumbnail}" alt="${game.title}">`: ""}
           <p><strong>Genre:</strong> ${game.genre || "Unknown Genre"}</p>
-          <p><strong>Platform:</strong> ${
-            game.platform || "Unknown Platform"
-          }</p>
+          <p><strong>Platform:</strong>${game.platform || "Unknown Platform"}</p>
+          <p><strong>Release Date:</strong>${game.release_date || "Unknown Release Date"}</p>
+          <p><strong>Publisher:</strong>${game.publisher || "Unknown Rating"}</p>
+          <p><strong>Developer:</strong>${game.developer || "Unknown Rating"}</p>
           <a href="${game.game_url}" target="_blank">Play Now</a>
       `;
     container.appendChild(gameElement);
